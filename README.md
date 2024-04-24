@@ -1,4 +1,4 @@
-# Enhancing Dataset Search with Compact Data Snippets
+# CDS
 
 This is the source code and data of the paper "Enhancing Dataset Search with Compact Data Snippets" SIGIR 2024.
 
