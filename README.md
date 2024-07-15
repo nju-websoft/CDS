@@ -111,3 +111,20 @@ DS1-E-1001 Q0 adaf0ce0-1064-4f55-9397-df553bd1ef75 3 0.925949423187341 mixed
 This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
 
 ## Citation
+
+```
+@inproceedings{CDS,
+  author       = {Qiaosheng Chen and
+                  Jiageng Chen and
+                  Xiao Zhou and
+                  Gong Cheng},
+  title        = {Enhancing Dataset Search with Compact Data Snippets},
+  booktitle    = {Proceedings of the 47th International {ACM} {SIGIR} Conference on
+                  Research and Development in Information Retrieval, {SIGIR} 2024, Washington
+                  DC, USA, July 14-18, 2024},
+  publisher    = {{ACM}},
+  year         = {2024},
+  url          = {https://doi.org/10.1145/3626772.3657837},
+  doi          = {10.1145/3626772.3657837}
+}
+```
