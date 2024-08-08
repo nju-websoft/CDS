@@ -107,6 +107,42 @@ DS1-E-1001 Q0 f8cfaa69-3f89-4ebe-96e2-d15a30173f43 2 1.0281533671470748 mixed
 DS1-E-1001 Q0 adaf0ce0-1064-4f55-9397-df553bd1ef75 3 0.925949423187341 mixed
 ```
 
+## Errata
+
+We wish to bring to the attention of the readers that there are minor errors in the results on ACORDAR test collection presented in Tables 2 and 5 of the published paper. The corrected tables are provided below.
+
+**Table 2: Effectiveness of reranking of our approach on NTCIR-E and ACORDAR, with * indicating a significant improvement after reranking ($p<0.05$).**
+| Test Collection | Reranking    | NDCG@5 | NDCG@10 | MAP@5  | MAP@10  |
+|-----------------|--------------|--------|---------|--------|---------|
+| NTCIR-E         | none         | 0.2252 | 0.2385  | 0.1232 | 0.1556  |
+|                 | monoBERT     | 0.2814* | 0.2635*  | 0.1497* | 0.1740*  |
+|                 | BGE          | **0.3063*** | **0.2860***  | **0.1888*** | **0.2101***  |
+|                 | BGE-reranker | 0.2989* | 0.2796*  | 0.1761* | 0.1994*  |
+| ACORDAR         | none         | 0.5538 | 0.5877  | 0.3198 | 0.4538  |
+|                 | monoBERT     | 0.6194* | 0.6256*  | 0.3671* | 0.4742*  |
+|                 | BGE          | **0.6292*** | **0.6310***  | **0.3758*** | **0.4796***  |
+|                 | BGE-reranker | 0.6217* | 0.6249*  | 0.3676* | 0.4731*  |
+
+
+**Table 5: Ablation study: effectiveness of data snippets.**
+|              |          | NTCIR-E |         | ACORDAR |         |
+|--------------|----------|---------|---------|---------|---------|
+| Reranking    | Snippet  | NDCG@5  | NDCG@10 | NDCG@5  | NDCG@10 |
+| monoBERT     | w/o data | 0.2664  | 0.2560  | 0.6144  | 0.6212  |
+|              | IlluSnip | 0.2721  | 0.2601  | 0.6174  | 0.6242  |
+|              | CDS      | **0.2814**  | **0.2635**  | **0.6194**  | **0.6256**  |
+| BGE          | w/o data | 0.2936  | 0.2815  | 0.6254  | 0.6293  |
+|              | IlluSnip | 0.3024  | 0.2825  | **0.6309**  | 0.6298  |
+|              | CDS      | **0.3063**  | **0.2860**  | 0.6292  | **0.6310**  |
+| BGE-reranker | w/o data | 0.2946  | 0.2798  | 0.6134  | 0.6199  |
+|              | IlluSnip | 0.2953  | **0.2809**  | 0.6169  | 0.6213  |
+|              | CDS      | **0.2989**  | 0.2796  | **0.6217**  | **0.6249**  |
+
+
+
+We apologize for any inconvenience these errors may have caused. The corrections do not affect the overall conclusions of the paper. The corresponding result files in the repository have also been updated.
+
+
 ## License
 This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
 
