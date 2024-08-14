@@ -11,6 +11,7 @@ Directory `./code` contains all the source code based on Python 3.10 and JDK 11.
 
 + Directory `./code/CDS` contains code for the other parts of our work.
   The code consists of the following sections:
+  + `graph_builder.py` unifies different formats of data in the NTCIR dataset and generate the corresponding data graph, which includes `term.tsv` and `triple.tsv`.
   + `graph_init.py` reads from data graph which connecting entities associated with attributes and  makes preparations for the execution of the CBA algorithm.
   + `HBLL.sh` builds HBLL for the CBA algorithm.
   + `kw_init.py`  takes each word in the query as a separate group, and selects the entity nodes that meet the correlation requirements as nodes in this group according to the pre-constructed index.
@@ -25,6 +26,8 @@ Directory `./code` contains all the source code based on Python 3.10 and JDK 11.
 ## Get Started
 
 In our experiment, each data consists of `term.tsv`  and `triple.tsv`, and you need to pre-build the BGE indexes `entities_bge-en-v1.5.index` and `edges_bge-en-v1.5.index` based on them.
+
+For the NTCIR dataset, `term.tsv` and `triple.tsv` are generated using `graph_builder.py`.
 
 The parameter **diameter bound** is set to 4 and **attribute number bound** is set to 5 in this code.
 
