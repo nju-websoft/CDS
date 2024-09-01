@@ -1,6 +1,6 @@
 # CDS
 
-This is the source code and data of the paper "Enhancing Dataset Search with Compact Data Snippets" SIGIR 2024.
+This is the source code and data of the paper "[Enhancing Dataset Search with Compact Data Snippets](https://dl.acm.org/doi/10.1145/3626772.3657837)" SIGIR 2024.
 
 ## Directory Structure
 
